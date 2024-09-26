@@ -1,0 +1,11 @@
+def employee_management_system():
+    print("Employee Management System")
+
+  dev1 = Developer("Alice", 28, 90000, "Python")
+  dev2 = Developer("Bob", 30, 85000, "Java")
+  manager1 = Manager("Charlie", 35, 100000, 10)
+
+  employees = [dev1, dev2, manager1]
+
+  for employee in employees:
+        print(employee.get_details())
