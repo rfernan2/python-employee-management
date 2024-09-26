@@ -1,0 +1,8 @@
+class Developer(Employee):
+    def __init__(self, name, age, salary, programming_language):
+    super().__init__(name, age, salary)
+    self.programming_language = programming_language
+
+ def get_details(self):
+        base_details = super().get_details()
+        return f"{base_details}, Programming Language: {self.programming_language}"
