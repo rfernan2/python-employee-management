@@ -1,0 +1,8 @@
+class Manager(Employee):
+    def __init__(self, name, age, salary, team_size):
+    super().__init__(name, age, salary)
+        self.team_size = team_size
+
+def get_details(self):
+    base_details = super().get_details()
+    return f"{base_details}, Manages: {self.team_size} team members"
